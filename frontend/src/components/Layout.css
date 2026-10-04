@@ -3,11 +3,17 @@
 .layout {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   min-height: 100svh;
+  background-color: var(--color-bg);
 }
 
 .layout-main {
   flex: 1;
-  padding: 32px 24px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+  box-sizing: border-box;
   text-align: left;
 }
