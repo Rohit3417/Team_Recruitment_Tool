@@ -1,3 +1,12 @@
+export const scoringConfig = {
+  topX: 4,
+  aggregationMethod: "mean", // how a team's score combines multiple
+    // members' values. Options: "mean" | "sum-with-cap" | "top-k"
+  missingDataPolicy: "penalty", // Options: "penalty" | "neutral" |
+    // "redistribute". This mock uses "penalty": missing fields are
+    // scored as 0 of their max, explicitly labeled as such.
+};
+
 export const mockScoringRules = [
   {
     id: "rule_github_contribs",

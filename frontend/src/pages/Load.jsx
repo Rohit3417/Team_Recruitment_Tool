@@ -25,7 +25,7 @@ function FlagBadge({ status }) {
 function UploadArea() {
   return (
     <div className="card">
-      <h2 className="section-heading">Step 1 — Load Team Data</h2>
+      <h2 className="section-heading">Upload File</h2>
       <p style={{ color: 'var(--color-text-secondary)', fontSize: 'var(--font-size-body)', marginBottom: 'var(--space-md)' }}>
         Upload a CSV or JSON export from Google Forms or your registration platform.
         Column mapping happens on the next screen.

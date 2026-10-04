@@ -1,4 +1,4 @@
-import { mockScoringRules, mockEligibilityRules } from '../mock/rules';
+import { mockScoringRules, mockEligibilityRules, scoringConfig } from '../mock/rules';
 
 /**
  * Human-readable label for each rule type.
@@ -10,6 +10,66 @@ const TYPE_LABELS = {
   keyword: 'Keyword match',
   count:   'Count',
 };
+
+/**
+ * Renders global configuration parameters (topX, aggregation, missing-data policy).
+ * Read-only summary card placed near the top of the page.
+ */
+function ConfigurationCard() {
+  const configRows = [
+    {
+      parameter: 'Top X Cutoff',
+      value: `Top ${scoringConfig.topX}`,
+      description: `${scoringConfig.topX} teams will be shortlisted`,
+    },
+    {
+      parameter: 'Team Aggregation Method',
+      value: scoringConfig.aggregationMethod,
+      description: 'Average across all team members',
+    },
+    {
+      parameter: 'Missing-Data Policy',
+      value: scoringConfig.missingDataPolicy,
+      description: 'Missing fields are scored as 0 of their maximum points',
+    },
+  ];
+
+  return (
+    <div className="card" style={{ marginBottom: 'var(--space-lg)' }}>
+      <h2 className="section-heading">Configuration</h2>
+      <p style={{ color: 'var(--color-text-secondary)', fontSize: 'var(--font-size-body)', marginBottom: 'var(--space-md)' }}>
+        Global recruitment and scoring parameters applied across all teams.
+      </p>
+
+      <div className="table-container">
+        <table className="table">
+          <thead>
+            <tr>
+              <th>Parameter</th>
+              <th>Value</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {configRows.map((row) => (
+              <tr key={row.parameter}>
+                <td style={{ fontWeight: 'var(--font-weight-semibold)', whiteSpace: 'nowrap' }}>
+                  {row.parameter}
+                </td>
+                <td style={{ whiteSpace: 'nowrap' }}>
+                  {row.value}
+                </td>
+                <td style={{ color: 'var(--color-text-secondary)' }}>
+                  {row.description}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
 
 /**
  * Renders a small horizontal fill bar showing weight as a proportion of 1.0.
@@ -193,6 +253,7 @@ export default function Rules() {
   return (
     <div>
       <h1 className="page-heading">Rules &amp; Config</h1>
+      <ConfigurationCard />
       <ScoringRulesCard />
       <EligibilityRulesCard />
     </div>

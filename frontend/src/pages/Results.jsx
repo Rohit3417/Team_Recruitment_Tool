@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { mockResults, mockTopX } from '../mock/results';
+import { scoringConfig } from '../mock/rules';
+import { mockResults } from '../mock/results';
 
 /**
  * Eligible / not-eligible badge.
@@ -35,7 +36,7 @@ function FlagsSummary({ flags }) {
 
 /**
  * Score breakdown table shown when a row is expanded.
- * Renders all breakdown entries including notes (MISSING / INVALID).
+ * Renders all breakdown entries including notes (MISSING / INVALID / policy).
  * Ineligible teams still show their breakdown — never hidden.
  *
  * NOTE: Uses inline styles with existing CSS variables for the breakdown
@@ -95,24 +96,22 @@ function BreakdownPanel({ breakdown }) {
 /**
  * A single result row + its collapsible breakdown.
  * Uses a real <button> with aria-expanded for keyboard + screen-reader support.
- * Rows below the cutoff are visually de-emphasized via muted text color —
+ * Rows below the cutoff and ineligible rows are visually de-emphasized via muted text color —
  * still fully visible (never hidden) to support the "explain rejection" requirement.
- *
- * NOTE: The toggle button uses inline styles with existing CSS variables for
- * a borderless, table-cell-style appearance. Flag for potential extraction to
- * a .row-toggle class in App.css if reused.
  */
-function ResultRow({ result, isAboveCutoff, isExpanded, onToggle }) {
-  const rowTextColor = isAboveCutoff
-    ? 'var(--color-text-primary)'
-    : 'var(--color-text-secondary)';
+function ResultRow({ result, isMuted, isExpanded, onToggle, rankDisplay }) {
+  const rowTextColor = isMuted
+    ? 'var(--color-text-secondary)'
+    : 'var(--color-text-primary)';
+
+  const formattedRank = rankDisplay ?? (result.rank != null ? `#${result.rank}` : '—');
 
   return (
     <>
       <tr style={{ color: rowTextColor }}>
         {/* Rank */}
         <td style={{ fontWeight: 'var(--font-weight-semibold)', whiteSpace: 'nowrap' }}>
-          #{result.rank}
+          {formattedRank}
         </td>
 
         {/* Team Name — expandable toggle button */}
@@ -160,7 +159,7 @@ function ResultRow({ result, isAboveCutoff, isExpanded, onToggle }) {
         </td>
 
         {/* Reason */}
-        <td style={{ fontSize: 'var(--font-size-small)', color: rowTextColor, maxWidth: '320px', overflowWrap: 'anywhere' }}>
+        <td style={{ fontSize: 'var(--font-size-small)', color: rowTextColor, minWidth: '320px', overflowWrap: 'anywhere' }}>
           {result.reason}
         </td>
       </tr>
@@ -181,9 +180,6 @@ function ResultRow({ result, isAboveCutoff, isExpanded, onToggle }) {
  * Visual cutoff divider row — spans all columns.
  * Uses a distinct background and centered label to make the shortlist
  * boundary immediately obvious.
- *
- * NOTE: Uses inline styles with existing CSS variables.
- * Flag for potential extraction to .cutoff-row in App.css if reused.
  */
 function CutoffRow({ topX }) {
   return (
@@ -210,7 +206,6 @@ function CutoffRow({ topX }) {
 }
 
 export default function Results() {
-  // Track which rows are expanded by team_id
   const [expandedIds, setExpandedIds] = useState(new Set());
 
   function toggleRow(teamId) {
@@ -225,7 +220,18 @@ export default function Results() {
     });
   }
 
-  const totalTeams = mockResults.length;
+  const topX = scoringConfig.topX;
+
+  // Use status directly to drive grouping:
+  // 1. SHORTLISTED and WAITLISTED teams sorted by rank ascending
+  const rankedTeams = mockResults
+    .filter((team) => team.status === 'SHORTLISTED' || team.status === 'WAITLISTED')
+    .sort((a, b) => (a.rank ?? 0) - (b.rank ?? 0));
+
+  // 2. INELIGIBLE teams sorted by score descending for readability
+  const ineligibleTeams = mockResults
+    .filter((team) => team.status === 'INELIGIBLE')
+    .sort((a, b) => b.score - a.score);
 
   return (
     <div>
@@ -235,14 +241,15 @@ export default function Results() {
           Results
         </h1>
         <p style={{ color: 'var(--color-text-secondary)', fontSize: 'var(--font-size-body)' }}>
-          Showing {totalTeams} teams ranked by score —{' '}
+          Showing {rankedTeams.length} ranked teams ({ineligibleTeams.length} ineligible) —{' '}
           <strong style={{ color: 'var(--color-text-primary)' }}>
-            Top {mockTopX} will be shortlisted.
+            Top {topX} will be shortlisted.
           </strong>{' '}
           Click a team name to see the full score breakdown.
         </p>
       </div>
 
+      {/* Ranked Teams Section */}
       <div className="table-container">
         <table className="table">
           <thead>
@@ -256,32 +263,64 @@ export default function Results() {
             </tr>
           </thead>
           <tbody>
-            {mockResults.map((result) => {
-              const isAboveCutoff = result.rank <= mockTopX;
+            {rankedTeams.reduce((rows, result) => {
+              const isShortlisted = result.status === 'SHORTLISTED';
               const isExpanded = expandedIds.has(result.team_id);
 
-              return (
+              rows.push(
                 <ResultRow
                   key={result.team_id}
                   result={result}
-                  isAboveCutoff={isAboveCutoff}
+                  isMuted={!isShortlisted}
                   isExpanded={isExpanded}
                   onToggle={() => toggleRow(result.team_id)}
+                  rankDisplay={`#${result.rank}`}
                 />
               );
-            }).reduce((rows, row, index) => {
-              // Insert the cutoff row after rank = mockTopX
-              // The results array is sorted by rank, so we check if the
-              // previous result was rank === mockTopX.
-              const result = mockResults[index];
-              rows.push(row);
-              if (result.rank === mockTopX) {
-                rows.push(<CutoffRow key="cutoff" topX={mockTopX} />);
+
+              if (result.rank === topX) {
+                rows.push(<CutoffRow key="cutoff" topX={topX} />);
               }
+
               return rows;
             }, [])}
           </tbody>
         </table>
+      </div>
+
+      {/* Ineligible Teams Section */}
+      <div style={{ marginTop: 'var(--space-xl)' }}>
+        <h2 className="section-heading">Ineligible Teams — Not Ranked</h2>
+        <p style={{ color: 'var(--color-text-secondary)', fontSize: 'var(--font-size-body)', marginBottom: 'var(--space-md)' }}>
+          Teams that failed mandatory eligibility rules are excluded from ranking regardless of score.
+        </p>
+
+        <div className="table-container">
+          <table className="table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Team Name</th>
+                <th>Score</th>
+                <th>Eligible</th>
+                <th>Flags</th>
+                <th>Reason</th>
+              </tr>
+            </thead>
+            <tbody>
+              {ineligibleTeams.map((result) => (
+                <ResultRow
+                  key={result.team_id}
+                  result={result}
+                  isMuted={true}
+                  isExpanded={expandedIds.has(result.team_id)}
+                  onToggle={() => toggleRow(result.team_id)}
+                  rankDisplay="—"
+                />
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

@@ -208,5 +208,31 @@ export const mockTeams = [
       linkedin: "OK",
       portfolio: "MISSING"
     }
+  },
+  {
+    team_id: "T008",
+    team_name: "Stack Overflow",
+    members: [
+      {
+        name: "Rishi Kapoor",
+        resume_url: "https://drive.google.com/file/d/rishi-resume/view",
+        github_url: null,
+        linkedin_url: "https://linkedin.com/in/rishikapoor",
+        portfolio_url: "https://rishi.dev"
+      },
+      {
+        name: "Priya Sundar",
+        resume_url: "https://drive.google.com/file/d/priya-cv/view",
+        github_url: null,
+        linkedin_url: "https://linkedin.com/in/priyasundar",
+        portfolio_url: "https://priyasundar.design"
+      }
+    ],
+    flags: {
+      resume: "OK",
+      github: "MISSING",
+      linkedin: "OK",
+      portfolio: "OK"
+    }
   }
 ];
