@@ -32,16 +32,7 @@ function UploadArea() {
       </p>
       {/* Demo upload zone — file input disabled, visual only */}
       <div
-        style={{
-          border: '2px dashed var(--color-border)',
-          borderRadius: 'var(--radius-md)',
-          padding: 'var(--space-xl)',
-          textAlign: 'center',
-          color: 'var(--color-text-secondary)',
-          fontSize: 'var(--font-size-body)',
-          backgroundColor: 'var(--color-bg)',
-          marginBottom: 'var(--space-md)',
-        }}
+        className="upload-area"
         aria-label="Upload area (demo only)"
       >
         <p style={{ marginBottom: 'var(--space-sm)', fontWeight: 'var(--font-weight-semibold)', color: 'var(--color-text-primary)' }}>
