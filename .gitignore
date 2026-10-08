@@ -1,0 +1,47 @@
+# Environments and Virtualenvs
+.venv/
+venv/
+env/
+ENV/
+*.env
+!.env.example
+
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Node / Frontend
+node_modules/
+.next/
+dist/
+build/
+.cache/
+
+# Runtime cache (Track 3: external data & enrichment cache - never commit)
+cache/*
+!cache/.gitkeep
+*.cache
+
+# PostgreSQL / Docker local volumes
+postgres_data/
+*.sql.gz
+
+# macOS / OS artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
