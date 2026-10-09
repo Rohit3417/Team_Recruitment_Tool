@@ -1,0 +1,1076 @@
+{
+  "teams": [
+    {
+      "team_id": "T001",
+      "team_name": "Byte Bandits",
+      "members": [
+        {
+          "name": "Aarav Desai",
+          "email": "aarav.desai0@example.com",
+          "github": "https://github.com/aaravdesai0",
+          "resume": "https://drive.example.com/resumes/aaravdesai0.pdf",
+          "linkedin": "https://www.linkedin.com/in/aaravdesai0",
+          "portfolio": "https://aaravdesai0.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T002",
+      "team_name": "Code Crusaders",
+      "members": [
+        {
+          "name": "Diya Bhatt",
+          "email": "diya.bhatt1@example.com",
+          "github": "",
+          "resume": "https://drive.example.com/resumes/diyabhatt1.pdf",
+          "linkedin": "https://www.linkedin.com/in/diyabhatt1",
+          "portfolio": "https://diyabhatt1.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T003",
+      "team_name": "Null Pointers",
+      "members": [
+        {
+          "name": "Vihaan Mehta",
+          "email": "vihaan.mehta2@example.com",
+          "github": "https://github.com/vihaanmehta2/project-2",
+          "resume": "",
+          "linkedin": "https://www.linkedin.com/in/vihaanmehta2",
+          "portfolio": "https://vihaanmehta2.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T004",
+      "team_name": "Stack Overflowers",
+      "members": [
+        {
+          "name": "Ananya Vyas",
+          "email": "ananya.vyas3@example.com",
+          "github": "",
+          "resume": "",
+          "linkedin": "https://www.linkedin.com/in/ananyavyas3",
+          "portfolio": ""
+        }
+      ]
+    },
+    {
+      "team_id": "T005",
+      "team_name": "Git Gud",
+      "members": [
+        {
+          "name": "Aditya Shah",
+          "email": "aditya.shah4@example.com",
+          "github": "https://github.com/",
+          "resume": "https://drive.example.com/resumes/adityashah4.pdf",
+          "linkedin": "https://www.linkedin.com/in/adityashah4",
+          "portfolio": "https://adityashah4.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T006",
+      "team_name": "Pixel Pioneers",
+      "members": [
+        {
+          "name": "Isha Modi",
+          "email": "isha.modi5@example.com",
+          "github": "https://github.com/ishamodi5/project-5",
+          "resume": "htp://drive.example.com/cv",
+          "linkedin": "https://www.linkedin.com/in/ishamodi5",
+          "portfolio": "https://ishamodi5.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T007",
+      "team_name": "Binary Beasts",
+      "members": [
+        {
+          "name": "Rohan Patel",
+          "email": "rohan.patel6@example.com",
+          "github": "https://github.com/rohanpatel6",
+          "resume": "https://drive.example.com/resumes/rohanpatel6.pdf",
+          "linkedin": "https://www.linkedin.com/in/rohanpatel6",
+          "portfolio": "https://rohanpatel6.example.dev"
+        },
+        {
+          "name": "Meera Parekh",
+          "email": "meera.parekh7@example.com",
+          "github": "meeraparekh7",
+          "resume": "https://drive.example.com/resumes/meeraparekh7.pdf",
+          "linkedin": "https://www.linkedin.com/in/meeraparekh7",
+          "portfolio": "https://meeraparekh7.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T008",
+      "team_name": "Syntax Squad",
+      "members": [
+        {
+          "name": "Kabir Dave",
+          "email": "kabir.dave8@example.com",
+          "github": "https://github.com/kabirdave8/project-8",
+          "resume": "https://drive.example.com/resumes/kabirdave8.pdf",
+          "linkedin": "https://www.linkedin.com/in/kabirdave8",
+          "portfolio": "https://kabirdave8.example.dev"
+        },
+        {
+          "name": "Saanvi Gandhi",
+          "email": "saanvi.gandhi9@example.com",
+          "github": "https://github.com/saanvigandhi9",
+          "resume": "https://drive.example.com/resumes/saanvigandhi9.pdf",
+          "linkedin": "",
+          "portfolio": ""
+        }
+      ]
+    },
+    {
+      "team_id": "T009",
+      "team_name": "Debug Ducks",
+      "members": [
+        {
+          "name": "Arjun Rana",
+          "email": "arjun.rana10@example.com",
+          "github": "arjunrana10",
+          "resume": "https://drive.example.com/resumes/arjunrana10.pdf",
+          "linkedin": "https://www.linkedin.com/in/arjunrana10",
+          "portfolio": "not a website"
+        },
+        {
+          "name": "Riya Trivedi",
+          "email": "riya.trivedi11@example.com",
+          "github": "https://github.com/riyatrivedi11/project-11",
+          "resume": "https://drive.example.com/resumes/riyatrivedi11.pdf",
+          "linkedin": "https://www.linkedin.com/in/riyatrivedi11",
+          "portfolio": "https://riyatrivedi11.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T010",
+      "team_name": "Loop Legends",
+      "members": [
+        {
+          "name": "Dev Soni",
+          "email": "dev.soni12@example.com",
+          "github": "https://github.com/devsoni12",
+          "resume": "https://drive.example.com/resumes/devsoni12.pdf",
+          "linkedin": "https://www.linkedin.com/in/devsoni12",
+          "portfolio": "https://devsoni12.example.dev"
+        },
+        {
+          "name": "Kavya Joshi",
+          "email": "kavya.joshi13@example.com",
+          "github": "kavyajoshi13",
+          "resume": "https://drive.example.com/resumes/kavyajoshi13.pdf",
+          "linkedin": "linkedin.com/in/",
+          "portfolio": "https://kavyajoshi13.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T011",
+      "team_name": "Cache Me Outside",
+      "members": [
+        {
+          "name": "Yash Thakkar",
+          "email": "yash.thakkar14@example.com",
+          "github": "https://github.com/yashthakkar14/project-14",
+          "resume": "https://drive.example.com/resumes/yashthakkar14.pdf",
+          "linkedin": "https://www.linkedin.com/in/yashthakkar14",
+          "portfolio": "https://yashthakkar14.example.dev"
+        },
+        {
+          "name": "Tanvi Desai",
+          "email": "tanvi.desai15@example.com",
+          "github": "https://github.com/tanvidesai15",
+          "resume": "https://drive.example.com/resumes/tanvidesai15.pdf",
+          "linkedin": "https://www.linkedin.com/in/tanvidesai15",
+          "portfolio": "https://tanvidesai15.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T012",
+      "team_name": "Merge Conflict",
+      "members": [
+        {
+          "name": "Harsh Bhatt",
+          "email": "harsh.bhatt16@example.com",
+          "github": "harshbhatt16",
+          "resume": "",
+          "linkedin": "https://www.linkedin.com/in/harshbhatt16",
+          "portfolio": "https://harshbhatt16.example.dev"
+        },
+        {
+          "name": "Nisha Mehta",
+          "email": "nisha.mehta17@example.com",
+          "github": "https://github.com/nishamehta17/project-17",
+          "resume": "",
+          "linkedin": "https://www.linkedin.com/in/nishamehta17",
+          "portfolio": "https://nishamehta17.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T013",
+      "team_name": "Quantum Quokkas",
+      "members": [
+        {
+          "name": "Karan Vyas",
+          "email": "karan.vyas18@example.com",
+          "github": "https://github.com/karanvyas18",
+          "resume": "https://drive.example.com/resumes/karanvyas18.pdf",
+          "linkedin": "https://www.linkedin.com/in/karanvyas18",
+          "portfolio": "https://karanvyas18.example.dev"
+        },
+        {
+          "name": "Pooja Shah",
+          "email": "pooja.shah19@example.com",
+          "github": "poojashah19",
+          "resume": "https://drive.example.com/resumes/poojashah19.pdf",
+          "linkedin": "https://www.linkedin.com/in/poojashah19",
+          "portfolio": "https://poojashah19.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T014",
+      "team_name": "Data Dragons",
+      "members": [
+        {
+          "name": "Aarav Modi",
+          "email": "aarav.patel.at.example.com",
+          "github": "https://github.com/aaravmodi20/project-20",
+          "resume": "https://drive.example.com/resumes/aaravmodi20.pdf",
+          "linkedin": "https://www.linkedin.com/in/aaravmodi20",
+          "portfolio": "https://aaravmodi20.example.dev"
+        },
+        {
+          "name": "Diya Patel",
+          "email": "diya.patel21@example.com",
+          "github": "https://github.com/diyapatel21",
+          "resume": "https://drive.example.com/resumes/diyapatel21.pdf",
+          "linkedin": "https://www.linkedin.com/in/diyapatel21",
+          "portfolio": "https://diyapatel21.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T015",
+      "team_name": "  Hash Hunters  ",
+      "members": [
+        {
+          "name": "Vihaan Parekh",
+          "email": "vihaan.parekh22@example.com",
+          "github": "vihaanparekh22",
+          "resume": "https://drive.example.com/resumes/vihaanparekh22.pdf",
+          "linkedin": "https://www.linkedin.com/in/vihaanparekh22",
+          "portfolio": "https://vihaanparekh22.example.dev"
+        },
+        {
+          "name": "Ananya Dave",
+          "email": "ananya.dave23@example.com",
+          "github": "https://github.com/ananyadave23/project-23",
+          "resume": "https://drive.example.com/resumes/ananyadave23.pdf",
+          "linkedin": "https://www.linkedin.com/in/ananyadave23",
+          "portfolio": "https://ananyadave23.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T016",
+      "team_name": "Async Aces",
+      "members": [
+        {
+          "name": "Aditya Gandhi",
+          "email": "aditya.gandhi24@example.com",
+          "github": "https://github.com/adityagandhi24",
+          "resume": "https://drive.example.com/resumes/adityagandhi24.pdf",
+          "linkedin": "https://www.linkedin.com/in/adityagandhi24",
+          "portfolio": "https://adityagandhi24.example.dev"
+        },
+        {
+          "name": "Isha Rana",
+          "email": "isha.rana25@example.com",
+          "github": "isharana25",
+          "resume": "https://drive.example.com/resumes/isharana25.pdf",
+          "linkedin": "https://www.linkedin.com/in/isharana25",
+          "portfolio": "https://isharana25.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T017",
+      "team_name": "Kernel Knights",
+      "members": [
+        {
+          "name": "Rohan Trivedi",
+          "email": "rohan.trivedi26@example.com",
+          "github": "https://github.com/rohantrivedi26/project-26",
+          "resume": "https://drive.example.com/resumes/rohantrivedi26.pdf",
+          "linkedin": "https://www.linkedin.com/in/rohantrivedi26",
+          "portfolio": "https://rohantrivedi26.example.dev"
+        },
+        {
+          "name": "Meera Soni",
+          "email": "meera.soni27@example.com",
+          "github": "https://github.com/meerasoni27",
+          "resume": "https://drive.example.com/resumes/meerasoni27.pdf",
+          "linkedin": "https://www.linkedin.com/in/meerasoni27",
+          "portfolio": "https://meerasoni27.example.dev"
+        },
+        {
+          "name": "Kabir Joshi",
+          "email": "kabir.joshi28@example.com",
+          "github": "kabirjoshi28",
+          "resume": "https://drive.example.com/resumes/kabirjoshi28.pdf",
+          "linkedin": "https://www.linkedin.com/in/kabirjoshi28",
+          "portfolio": "https://kabirjoshi28.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T018",
+      "team_name": "Lambda Lords",
+      "members": [
+        {
+          "name": "Saanvi Thakkar",
+          "email": "saanvi.thakkar29@example.com",
+          "github": "https://github.com/saanvithakkar29/project-29",
+          "resume": "https://drive.example.com/resumes/saanvithakkar29.pdf",
+          "linkedin": "https://www.linkedin.com/in/saanvithakkar29",
+          "portfolio": "https://saanvithakkar29.example.dev"
+        },
+        {
+          "name": "Arjun Desai",
+          "email": "arjun.desai30@example.com",
+          "github": "https://github.com/arjundesai30",
+          "resume": "https://drive.example.com/resumes/arjundesai30.pdf",
+          "linkedin": "https://www.linkedin.com/in/arjundesai30",
+          "portfolio": "https://arjundesai30.example.dev"
+        },
+        {
+          "name": "Riya Bhatt",
+          "email": "riya.bhatt31@example.com",
+          "github": "",
+          "resume": "https://drive.example.com/resumes/riyabhatt31.pdf",
+          "linkedin": "https://www.linkedin.com/in/riyabhatt31",
+          "portfolio": "https://riyabhatt31.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T019",
+      "team_name": "Segfault Survivors",
+      "members": [
+        {
+          "name": "Dev Mehta",
+          "email": "dev.mehta32@example.com",
+          "github": "https://github.com/devmehta32/project-32",
+          "resume": "https://drive.example.com/resumes/devmehta32.pdf",
+          "linkedin": "https://www.linkedin.com/in/devmehta32",
+          "portfolio": "https://devmehta32.example.dev"
+        },
+        {
+          "name": "Kavya Vyas",
+          "email": "kavya.vyas33@example.com",
+          "github": "https://gitlab.com/someone",
+          "resume": "https://drive.example.com/resumes/kavyavyas33.pdf",
+          "linkedin": "https://www.linkedin.com/in/kavyavyas33",
+          "portfolio": "https://kavyavyas33.example.dev"
+        },
+        {
+          "name": "Yash Shah",
+          "email": "yash.shah34@example.com",
+          "github": "yashshah34",
+          "resume": "https://drive.example.com/resumes/yashshah34.pdf",
+          "linkedin": "https://www.linkedin.com/in/yashshah34",
+          "portfolio": "https://yashshah34.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T020",
+      "team_name": "Tensor Titans",
+      "members": [
+        {
+          "name": "Tanvi Modi",
+          "email": "TANVI.MODI35@EXAMPLE.COM",
+          "github": "https://github.com/tanvimodi35/project-35",
+          "resume": "https://drive.example.com/resumes/tanvimodi35.pdf",
+          "linkedin": "https://www.linkedin.com/in/tanvimodi35",
+          "portfolio": "https://tanvimodi35.example.dev"
+        },
+        {
+          "name": "Harsh Patel",
+          "email": "harsh.patel36@example.com",
+          "github": "https://github.com/harshpatel36",
+          "resume": "https://drive.example.com/resumes/harshpatel36.pdf",
+          "linkedin": "https://www.linkedin.com/in/harshpatel36",
+          "portfolio": "https://harshpatel36.example.dev"
+        },
+        {
+          "name": "Nisha Parekh",
+          "email": "nisha.parekh37@example.com",
+          "github": "nishaparekh37",
+          "resume": "https://drive.example.com/resumes/nishaparekh37.pdf",
+          "linkedin": "https://www.linkedin.com/in/nishaparekh37",
+          "portfolio": "https://nishaparekh37.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T021",
+      "team_name": "Neural Ninjas",
+      "members": [
+        {
+          "name": "Karan Dave",
+          "email": "karan.dave38@example.com",
+          "github": "https://github.com/karandave38/project-38",
+          "resume": "https://drive.example.com/resumes/karandave38.pdf",
+          "linkedin": "https://www.linkedin.com/in/karandave38",
+          "portfolio": "https://karandave38.example.dev"
+        },
+        {
+          "name": "Pooja Gandhi",
+          "email": "pooja.gandhi39@example.com",
+          "github": "https://github.com/poojagandhi39",
+          "resume": "https://drive.example.com/resumes/poojagandhi39.pdf",
+          "linkedin": "https://www.linkedin.com/in/poojagandhi39",
+          "portfolio": "https://poojagandhi39.example.dev"
+        },
+        {
+          "name": "Aarav Rana",
+          "email": "aarav.rana40@example.com",
+          "github": "aaravrana40",
+          "resume": "https://drive.example.com/resumes/aaravrana40.pdf",
+          "linkedin": "https://www.linkedin.com/in/aaravrana40",
+          "portfolio": "https://aaravrana40.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T022",
+      "team_name": "Regex Rangers",
+      "members": [
+        {
+          "name": "Diya Trivedi",
+          "email": "diya.trivedi41@example.com",
+          "github": "https://github.com/diyatrivedi41/project-41",
+          "resume": "https://drive.example.com/resumes/diyatrivedi41.pdf",
+          "linkedin": "https://www.linkedin.com/in/diyatrivedi41",
+          "portfolio": ""
+        },
+        {
+          "name": "Vihaan Soni",
+          "email": "vihaan.soni42@example.com",
+          "github": "https://github.com/vihaansoni42",
+          "resume": "https://drive.example.com/resumes/vihaansoni42.pdf",
+          "linkedin": "https://www.linkedin.com/in/vihaansoni42",
+          "portfolio": "https://vihaansoni42.example.dev"
+        },
+        {
+          "name": "Ananya Joshi",
+          "email": "ananya.joshi43@example.com",
+          "github": "ananyajoshi43",
+          "resume": "https://drive.example.com/resumes/ananyajoshi43.pdf",
+          "linkedin": "https://www.linkedin.com/in/ananyajoshi43",
+          "portfolio": "https://ananyajoshi43.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T023",
+      "team_name": "Docker Dynamos",
+      "members": [
+        {
+          "name": "Aditya Thakkar",
+          "email": "aditya.thakkar44@example.com",
+          "github": "https://github.com/adityathakkar44/project-44",
+          "resume": "https://drive.example.com/resumes/adityathakkar44.pdf",
+          "linkedin": "https://www.linkedin.com/in/adityathakkar44",
+          "portfolio": "https://adityathakkar44.example.dev"
+        },
+        {
+          "name": "Isha Desai",
+          "email": "isha.desai45@example.com",
+          "github": "https://github.com/ishadesai45",
+          "resume": "https://drive.example.com/resumes/ishadesai45.pdf",
+          "linkedin": "https://www.linkedin.com/in/ishadesai45",
+          "portfolio": "https://ishadesai45.example.dev"
+        },
+        {
+          "name": "Rohan Bhatt",
+          "email": "rohan.bhatt46@example.com",
+          "github": "rohanbhatt46",
+          "resume": "https://drive.example.com/resumes/rohanbhatt46.pdf",
+          "linkedin": "https://www.linkedin.com/in/rohanbhatt46",
+          "portfolio": "https://rohanbhatt46.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T024",
+      "team_name": "Swift Sprints",
+      "members": [
+        {
+          "name": "Meera Mehta",
+          "email": "meera.mehta47@example.com",
+          "github": "https://github.com/meeramehta47/project-47",
+          "resume": "https://drive.example.com/resumes/meeramehta47.pdf",
+          "linkedin": "https://www.linkedin.com/in/meeramehta47",
+          "portfolio": "https://meeramehta47.example.dev"
+        },
+        {
+          "name": "Kabir Vyas",
+          "email": "kabir.vyas48@example.com",
+          "github": "https://github.com/kabirvyas48",
+          "resume": "https://drive.example.com/resumes/kabirvyas48.pdf",
+          "linkedin": "",
+          "portfolio": "https://kabirvyas48.example.dev"
+        },
+        {
+          "name": "Saanvi Shah",
+          "email": "saanvi.shah49@example.com",
+          "github": "saanvishah49",
+          "resume": "https://drive.example.com/resumes/saanvishah49.pdf",
+          "linkedin": "https://www.linkedin.com/in/saanvishah49",
+          "portfolio": "https://saanvishah49.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T025",
+      "team_name": "Cloud Climbers",
+      "members": [
+        {
+          "name": "Arjun Modi",
+          "email": "arjun.modi50@example.com",
+          "github": "https://github.com/arjunmodi50/project-50",
+          "resume": "https://drive.example.com/resumes/arjunmodi50.pdf",
+          "linkedin": "https://www.linkedin.com/in/arjunmodi50",
+          "portfolio": "https://arjunmodi50.example.dev"
+        },
+        {
+          "name": "Riya Patel",
+          "email": "riya.patel51@example.com",
+          "github": "https://github.com/riyapatel51",
+          "resume": "https://drive.example.com/resumes/riyapatel51.pdf",
+          "linkedin": "https://www.linkedin.com/in/riyapatel51",
+          "portfolio": "https://riyapatel51.example.dev"
+        },
+        {
+          "name": "Dev Parekh",
+          "email": "dev.parekh52@example.com",
+          "github": "devparekh52",
+          "resume": "https://drive.example.com/resumes/devparekh52.pdf",
+          "linkedin": "https://www.linkedin.com/in/devparekh52",
+          "portfolio": "https://devparekh52.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T026",
+      "team_name": "Bug Busters",
+      "members": [
+        {
+          "name": "Kavya Dave",
+          "email": "kavya.dave53@example.com",
+          "github": "https://github.com/kavyadave53/project-53",
+          "resume": "https://drive.example.com/resumes/kavyadave53.pdf",
+          "linkedin": "https://www.linkedin.com/in/kavyadave53",
+          "portfolio": "https://kavyadave53.example.dev"
+        },
+        {
+          "name": "Yash Gandhi",
+          "email": "yash.gandhi54@example.com",
+          "github": "https://github.com/yashgandhi54",
+          "resume": "https://drive.example.com/resumes/yashgandhi54.pdf",
+          "linkedin": "https://www.linkedin.com/in/yashgandhi54",
+          "portfolio": "https://yashgandhi54.example.dev"
+        },
+        {
+          "name": "Tanvi Rana",
+          "email": "tanvi.rana55@example.com",
+          "github": "tanvirana55",
+          "resume": "resume.pdf",
+          "linkedin": "https://www.linkedin.com/in/tanvirana55",
+          "portfolio": "https://tanvirana55.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T027",
+      "team_name": "API Avengers",
+      "members": [
+        {
+          "name": "Harsh Trivedi",
+          "email": "harsh.trivedi56@example.com",
+          "github": "https://github.com/harshtrivedi56/project-56",
+          "resume": "https://drive.example.com/resumes/harshtrivedi56.pdf",
+          "linkedin": "https://www.linkedin.com/in/harshtrivedi56",
+          "portfolio": "https://harshtrivedi56.example.dev"
+        },
+        {
+          "name": "Nisha Soni",
+          "email": "nisha.soni57@example.com",
+          "github": "https://github.com/nishasoni57",
+          "resume": "https://drive.example.com/resumes/nishasoni57.pdf",
+          "linkedin": "https://www.linkedin.com/in/nishasoni57",
+          "portfolio": "https://nishasoni57.example.dev"
+        },
+        {
+          "name": "Karan Joshi",
+          "email": "karan.joshi58@example.com",
+          "github": "karanjoshi58",
+          "resume": "https://drive.example.com/resumes/karanjoshi58.pdf",
+          "linkedin": "https://www.linkedin.com/in/karanjoshi58",
+          "portfolio": "https://karanjoshi58.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T028",
+      "team_name": "Query Queens",
+      "members": [
+        {
+          "name": "Pooja Thakkar",
+          "email": "pooja.thakkar59@example.com",
+          "github": "@@bad user!!",
+          "resume": "https://drive.example.com/resumes/poojathakkar59.pdf",
+          "linkedin": "https://www.linkedin.com/in/poojathakkar59",
+          "portfolio": "https://poojathakkar59.example.dev"
+        },
+        {
+          "name": "Aarav Desai",
+          "email": "aarav.desai60@example.com",
+          "github": "https://github.com/aaravdesai60",
+          "resume": "https://drive.example.com/resumes/aaravdesai60.pdf",
+          "linkedin": "https://www.linkedin.com/in/aaravdesai60",
+          "portfolio": "https://aaravdesai60.example.dev"
+        },
+        {
+          "name": "Diya Bhatt",
+          "email": "diya.bhatt61@example.com",
+          "github": "diyabhatt61",
+          "resume": "https://drive.example.com/resumes/diyabhatt61.pdf",
+          "linkedin": "https://www.linkedin.com/in/diyabhatt61",
+          "portfolio": "https://diyabhatt61.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T029",
+      "team_name": "Fork Bombers",
+      "members": [
+        {
+          "name": "Vihaan Mehta",
+          "email": "vihaan.mehta62@example.com",
+          "github": "https://github.com/vihaanmehta62/project-62",
+          "resume": "https://drive.example.com/resumes/vihaanmehta62.pdf",
+          "linkedin": "https://www.linkedin.com/in/vihaanmehta62",
+          "portfolio": "https://vihaanmehta62.example.dev"
+        },
+        {
+          "name": "Ananya Vyas",
+          "email": "ananya.vyas63@example.com",
+          "github": "https://github.com/ananyavyas63",
+          "resume": "https://drive.example.com/resumes/ananyavyas63.pdf",
+          "linkedin": "https://www.linkedin.com/in/ananyavyas63",
+          "portfolio": "https://ananyavyas63.example.dev"
+        },
+        {
+          "name": "Aditya Shah",
+          "email": "aditya.shah64@example.com",
+          "github": "adityashah64",
+          "resume": "https://drive.example.com/resumes/adityashah64.pdf",
+          "linkedin": "https://www.linkedin.com/in/adityashah64",
+          "portfolio": "https://adityashah64.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T030",
+      "team_name": "Heap Heroes",
+      "members": [
+        {
+          "name": "Isha Modi",
+          "email": "isha.modi65@example.com",
+          "github": "https://github.com/ishamodi65/project-65",
+          "resume": "https://drive.example.com/resumes/ishamodi65.pdf",
+          "linkedin": "https://www.linkedin.com/in/ishamodi65",
+          "portfolio": "https://ishamodi65.example.dev"
+        },
+        {
+          "name": "Rohan Patel",
+          "email": "rohan.patel66@example.com",
+          "github": "https://github.com/rohanpatel66",
+          "resume": "https://drive.example.com/resumes/rohanpatel66.pdf",
+          "linkedin": "https://www.linkedin.com/in/rohanpatel66",
+          "portfolio": "https://rohanpatel66.example.dev"
+        },
+        {
+          "name": "Meera Parekh",
+          "email": "meera.parekh67@example.com",
+          "github": "meeraparekh67",
+          "resume": "https://drive.example.com/resumes/meeraparekh67.pdf",
+          "linkedin": "https://www.linkedin.com/in/meeraparekh67",
+          "portfolio": "https://meeraparekh67.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T031",
+      "team_name": "Thread Tamers",
+      "members": [
+        {
+          "name": "Kabir Dave",
+          "email": "kabir.dave68@example.com",
+          "github": "https://github.com/kabirdave68/project-68",
+          "resume": "https://drive.example.com/resumes/kabirdave68.pdf",
+          "linkedin": "https://www.linkedin.com/in/kabirdave68",
+          "portfolio": "https://kabirdave68.example.dev"
+        },
+        {
+          "name": "Saanvi Gandhi",
+          "email": "saanvi.gandhi69@example.com",
+          "github": "https://github.com/saanvigandhi69",
+          "resume": "https://drive.example.com/resumes/saanvigandhi69.pdf",
+          "linkedin": "https://www.linkedin.com/in/saanvigandhi69",
+          "portfolio": "https://saanvigandhi69.example.dev"
+        },
+        {
+          "name": "Arjun Rana",
+          "email": "arjun.rana70@example.com",
+          "github": "arjunrana70",
+          "resume": "https://drive.example.com/resumes/arjunrana70.pdf",
+          "linkedin": "https://www.linkedin.com/in/arjunrana70",
+          "portfolio": "https://arjunrana70.example.dev"
+        },
+        {
+          "name": "Riya Trivedi",
+          "email": "riya.trivedi71@example.com",
+          "github": "",
+          "resume": "",
+          "linkedin": "https://www.linkedin.com/in/riyatrivedi71",
+          "portfolio": "https://riyatrivedi71.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T032",
+      "team_name": "Vector Vikings",
+      "members": [
+        {
+          "name": "Dev Soni",
+          "email": "dev.soni72@example.com",
+          "github": "https://github.com/devsoni72",
+          "resume": "https://drive.example.com/resumes/devsoni72.pdf",
+          "linkedin": "https://www.linkedin.com/in/devsoni72",
+          "portfolio": "https://devsoni72.example.dev"
+        },
+        {
+          "name": "Kavya Joshi",
+          "email": "kavya.joshi73@example.com",
+          "github": "kavyajoshi73",
+          "resume": "https://drive.example.com/resumes/kavyajoshi73.pdf",
+          "linkedin": "https://www.linkedin.com/in/kavyajoshi73",
+          "portfolio": "https://kavyajoshi73.example.dev"
+        },
+        {
+          "name": "Yash Thakkar",
+          "email": "yash.thakkar74@example.com",
+          "github": "https://github.com/yashthakkar74/project-74",
+          "resume": "https://drive.example.com/resumes/yashthakkar74.pdf",
+          "linkedin": "https://www.linkedin.com/in/yashthakkar74",
+          "portfolio": "https://yashthakkar74.example.dev"
+        },
+        {
+          "name": "Tanvi Desai",
+          "email": "tanvi.desai75@example.com",
+          "github": "https://github.com/tanvidesai75",
+          "resume": "https://drive.example.com/resumes/tanvidesai75.pdf",
+          "linkedin": "https://www.linkedin.com/in/tanvidesai75",
+          "portfolio": "https://tanvidesai75.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T033",
+      "team_name": "Token Titans",
+      "members": [
+        {
+          "name": "Harsh Bhatt",
+          "email": "harsh.bhatt76@example.com",
+          "github": "harshbhatt76",
+          "resume": "https://drive.example.com/resumes/harshbhatt76.pdf",
+          "linkedin": "https://www.linkedin.com/in/harshbhatt76",
+          "portfolio": "https://harshbhatt76.example.dev"
+        },
+        {
+          "name": "Nisha Mehta",
+          "email": "nisha.mehta77@example.com",
+          "github": "https://github.com/nishamehta77/project-77",
+          "resume": "https://drive.example.com/resumes/nishamehta77.pdf",
+          "linkedin": "https://www.linkedin.com/in/nishamehta77",
+          "portfolio": "https://nishamehta77.example.dev"
+        },
+        {
+          "name": "Karan Vyas",
+          "email": "karan.vyas78@example.com",
+          "github": "https://github.com/karanvyas78",
+          "resume": "https://drive.example.com/resumes/karanvyas78.pdf",
+          "linkedin": "https://www.linkedin.com/in/karanvyas78",
+          "portfolio": "http://"
+        },
+        {
+          "name": "Pooja Shah",
+          "email": "pooja.shah79@example.com",
+          "github": "poojashah79",
+          "resume": "https://drive.example.com/resumes/poojashah79.pdf",
+          "linkedin": "https://www.linkedin.com/in/poojashah79",
+          "portfolio": "https://poojashah79.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T034",
+      "team_name": "Branch Breakers",
+      "members": [
+        {
+          "name": "Aarav Modi",
+          "email": "aarav.modi80@example.com",
+          "github": "https://github.com/aaravmodi80/project-80",
+          "resume": "https://drive.example.com/resumes/aaravmodi80.pdf",
+          "linkedin": "https://www.linkedin.com/in/aaravmodi80",
+          "portfolio": "https://aaravmodi80.example.dev"
+        },
+        {
+          "name": "Diya Patel",
+          "email": "diya.patel81@example.com",
+          "github": "https://github.com/diyapatel81",
+          "resume": "https://drive.example.com/resumes/diyapatel81.pdf",
+          "linkedin": "https://www.linkedin.com/in/diyapatel81",
+          "portfolio": "https://diyapatel81.example.dev"
+        },
+        {
+          "name": "Vihaan Parekh",
+          "email": "vihaan.parekh82@example.com",
+          "github": "vihaanparekh82",
+          "resume": "https://drive.example.com/resumes/vihaanparekh82.pdf",
+          "linkedin": "https://www.linkedin.com/in/vihaanparekh82",
+          "portfolio": "https://vihaanparekh82.example.dev"
+        },
+        {
+          "name": "Ananya Dave",
+          "email": "ananya.dave83@example.com",
+          "github": "https://github.com/ananyadave83/project-83",
+          "resume": "https://drive.example.com/resumes/ananyadave83.pdf",
+          "linkedin": "https://www.linkedin.com/in/ananyadave83",
+          "portfolio": "https://ananyadave83.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T035",
+      "team_name": "Rust Rebels",
+      "members": [
+        {
+          "name": "Aditya Gandhi",
+          "email": "aditya.gandhi84@example.com",
+          "github": "https://github.com/adityagandhi84",
+          "resume": "https://drive.example.com/resumes/adityagandhi84.pdf",
+          "linkedin": "https://www.linkedin.com/in/adityagandhi84",
+          "portfolio": "https://adityagandhi84.example.dev"
+        },
+        {
+          "name": "Isha Rana",
+          "email": "isha.rana85@example.com",
+          "github": "isharana85",
+          "resume": "https://drive.example.com/resumes/isharana85.pdf",
+          "linkedin": "https://www.linkedin.com/in/isharana85",
+          "portfolio": "https://isharana85.example.dev"
+        },
+        {
+          "name": "Rohan Trivedi",
+          "email": "rohan.trivedi86@example.com",
+          "github": "https://github.com/rohantrivedi86/project-86",
+          "resume": "https://drive.example.com/resumes/rohantrivedi86.pdf",
+          "linkedin": "https://www.linkedin.com/in/rohantrivedi86",
+          "portfolio": "https://rohantrivedi86.example.dev"
+        },
+        {
+          "name": "Meera Soni",
+          "email": "meera.soni87@example.com",
+          "github": "https://github.com/meerasoni87",
+          "resume": "https://drive.example.com/resumes/meerasoni87.pdf",
+          "linkedin": "https://www.linkedin.com/in/meerasoni87",
+          "portfolio": "https://meerasoni87.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T036",
+      "team_name": "Mutex Masters",
+      "members": [
+        {
+          "name": "Kabir Joshi",
+          "email": "kabir.joshi88@example.com",
+          "github": "kabirjoshi88",
+          "resume": "https://drive.example.com/resumes/kabirjoshi88.pdf",
+          "linkedin": "https://www.linkedin.com/in/kabirjoshi88",
+          "portfolio": "https://kabirjoshi88.example.dev"
+        },
+        {
+          "name": "Saanvi Thakkar",
+          "email": "saanvi.thakkar89@example.com",
+          "github": "https://github.com/saanvithakkar89/project-89",
+          "resume": "https://drive.example.com/resumes/saanvithakkar89.pdf",
+          "linkedin": "https://www.linkedin.com/in/saanvithakkar89",
+          "portfolio": "https://saanvithakkar89.example.dev"
+        },
+        {
+          "name": "Arjun Desai",
+          "email": "arjun.desai90@example.com",
+          "github": "https://github.com/arjundesai90",
+          "resume": "https://drive.example.com/resumes/arjundesai90.pdf",
+          "linkedin": "https://www.linkedin.com/in/arjundesai90",
+          "portfolio": "https://arjundesai90.example.dev"
+        },
+        {
+          "name": "Riya Bhatt",
+          "email": "riya.bhatt91@example.com",
+          "github": "riyabhatt91",
+          "resume": "https://drive.example.com/resumes/riyabhatt91.pdf",
+          "linkedin": "https://www.linkedin.com/in/riyabhatt91",
+          "portfolio": "https://riyabhatt91.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T037",
+      "team_name": "Pull Request Posse",
+      "members": [
+        {
+          "name": "Dev Mehta",
+          "email": "dev.mehta92@example.com",
+          "github": "https://github.com/devmehta92/project-92",
+          "resume": "https://drive.example.com/resumes/devmehta92.pdf",
+          "linkedin": "https://www.linkedin.com/in/devmehta92",
+          "portfolio": "https://devmehta92.example.dev"
+        },
+        {
+          "name": "Kavya Vyas",
+          "email": "kavya.vyas93@example.com",
+          "github": "https://github.com/kavyavyas93",
+          "resume": "https://drive.example.com/resumes/kavyavyas93.pdf",
+          "linkedin": "https://www.linkedin.com/in/kavyavyas93",
+          "portfolio": "https://kavyavyas93.example.dev"
+        },
+        {
+          "name": "Yash Shah",
+          "email": "yash.shah94@example.com",
+          "github": "yashshah94",
+          "resume": "https://drive.example.com/resumes/yashshah94.pdf",
+          "linkedin": "https://www.linkedin.com/in/yashshah94",
+          "portfolio": "https://yashshah94.example.dev"
+        },
+        {
+          "name": "Tanvi Modi",
+          "email": "tanvi.modi95@example.com",
+          "github": "https://github.com/tanvimodi95/project-95",
+          "resume": "https://drive.example.com/resumes/tanvimodi95.pdf",
+          "linkedin": "https://www.linkedin.com/in/tanvimodi95",
+          "portfolio": "https://tanvimodi95.example.dev"
+        },
+        {
+          "name": "Harsh Patel",
+          "email": "harsh.patel96@example.com",
+          "github": "https://github.com/harshpatel96",
+          "resume": "https://drive.example.com/resumes/harshpatel96.pdf",
+          "linkedin": "https://www.linkedin.com/in/harshpatel96",
+          "portfolio": "https://harshpatel96.example.dev"
+        },
+        {
+          "name": "Nisha Parekh",
+          "email": "nisha.parekh97@example.com",
+          "github": "",
+          "resume": "https://drive.example.com/resumes/nishaparekh97.pdf",
+          "linkedin": "https://www.linkedin.com/in/nishaparekh97",
+          "portfolio": "https://nishaparekh97.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T038",
+      "team_name": "Loop Legends",
+      "members": [
+        {
+          "name": "Dev Soni",
+          "email": "dev.soni12@example.com",
+          "github": "https://github.com/devsoni12",
+          "resume": "https://drive.example.com/resumes/devsoni12.pdf",
+          "linkedin": "https://www.linkedin.com/in/devsoni12",
+          "portfolio": "https://devsoni12.example.dev"
+        },
+        {
+          "name": "Kavya Joshi",
+          "email": "kavya.joshi13@example.com",
+          "github": "kavyajoshi13",
+          "resume": "https://drive.example.com/resumes/kavyajoshi13.pdf",
+          "linkedin": "linkedin.com/in/",
+          "portfolio": "https://kavyajoshi13.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T039",
+      "team_name": "Bit Shifters",
+      "members": [
+        {
+          "name": "Karan Dave",
+          "email": "karan.dave98@example.com",
+          "github": "https://github.com/karandave98/project-98",
+          "resume": "https://drive.example.com/resumes/karandave98.pdf",
+          "linkedin": "https://www.linkedin.com/in/karandave98",
+          "portfolio": "https://karandave98.example.dev"
+        },
+        {
+          "name": "Harsh Patel",
+          "email": "harsh.patel36@example.com",
+          "github": "https://github.com/harshpatel36",
+          "resume": "https://drive.example.com/resumes/poojagandhi99.pdf",
+          "linkedin": "https://www.linkedin.com/in/poojagandhi99",
+          "portfolio": "https://poojagandhi99.example.dev"
+        }
+      ]
+    },
+    {
+      "team_id": "T040",
+      "team_name": "Ping Pong",
+      "members": [
+        {
+          "name": "Aarav Rana",
+          "email": "aarav.rana100@example.com",
+          "github": "",
+          "resume": "",
+          "linkedin": "",
+          "portfolio": ""
+        },
+        {
+          "name": "",
+          "email": "diya.trivedi101@example.com",
+          "github": "",
+          "resume": "",
+          "linkedin": "",
+          "portfolio": ""
+        }
+      ]
+    }
+  ]
+}

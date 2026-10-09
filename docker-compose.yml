@@ -1,0 +1,26 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: recruitment_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-recruitment_db}
+      POSTGRES_USER: ${POSTGRES_USER:-recruitment_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-recruitment_pass}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      # Schema is authoritatively managed via Alembic migrations (run 'alembic upgrade head')
+      # Reference DDL remains in backend/app/db/schema.sql
+      # - ./backend/app/db/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-recruitment_user} -d ${POSTGRES_DB:-recruitment_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+
+volumes:
+  postgres_data:
+    driver: local
