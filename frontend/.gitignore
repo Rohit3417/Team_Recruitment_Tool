@@ -10,3 +10,9 @@ CONTEXT.md
 DESIGN.md
 DAY_*.md
 PHASE_*.md
+
+# Unignore official Track 3 M3 frontend documentation
+!context.md
+!prd.md
+!design.md
+!agent.md
