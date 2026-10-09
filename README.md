@@ -4,9 +4,7 @@ A configurable, explainable, team-level hackathon shortlisting tool built on det
 
 ---
 
-## Day 1 Setup Guide
-
-Follow these quick steps to get the local development environment running:
+## Quickstart & Local Development Guide
 
 ### 1. Configure Environment Variables
 Copy `.env.example` to create your local `.env`:
@@ -15,7 +13,7 @@ cp .env.example .env
 ```
 
 ### 2. Start PostgreSQL with Docker Compose
-Start PostgreSQL 16 (includes automatic schema initialization from `backend/app/db/schema.sql`):
+Start PostgreSQL 16 container:
 ```bash
 docker compose up -d
 ```
@@ -24,19 +22,44 @@ To verify the database container health:
 docker compose ps
 ```
 
-### 3. Start FastAPI Locally
-Create and activate a Python virtual environment, install requirements, and run the backend server:
+### 3. Install Dependencies & Apply Alembic Migrations
+Activate your virtual environment and install backend requirements:
 ```bash
-python3 -m venv .venv
 source .venv/bin/activate
 pip install -r backend/requirements.txt
+```
+
+Apply database migrations to the latest revision:
+```bash
+alembic -c backend/alembic.ini upgrade head
+```
+
+To inspect migration status:
+```bash
+alembic -c backend/alembic.ini current
+```
+
+To roll back migrations if needed:
+```bash
+alembic -c backend/alembic.ini downgrade base
+```
+
+### 4. Run Backend Tests
+Run the test suite against the isolated PostgreSQL test database:
+```bash
+pytest -v
+```
+
+### 5. Start FastAPI Locally
+Run the FastAPI development server:
+```bash
 uvicorn backend.app.main:app --reload --port 8000
 ```
 
-### 4. Verify Health & Interactive Docs
-- **Health Check:** Open `http://localhost:8000/health` (should return `{"status": "ok"}`)
-- **Interactive Swagger Docs:** Open `http://localhost:8000/docs`
-- **ReDoc Documentation:** Open `http://localhost:8000/redoc`
+### 6. Verify Health & Interactive Docs
+- **Health Check:** `http://localhost:8000/health` (returns `{"status": "ok"}`)
+- **Interactive Swagger Docs:** `http://localhost:8000/docs`
+- **ReDoc Documentation:** `http://localhost:8000/redoc`
 
 ---
 

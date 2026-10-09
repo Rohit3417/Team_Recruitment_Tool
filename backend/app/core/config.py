@@ -10,11 +10,31 @@ class Settings:
     API_PREFIX: str = ""
     ENVIRONMENT: str = os.getenv("ENVIRONMENT", "development")
 
-    # PostgreSQL Database URL
-    DATABASE_URL: str = os.getenv(
-        "DATABASE_URL",
-        "postgresql://recruitment_user:recruitment_pass@localhost:5432/recruitment_db",
-    )
+    # PostgreSQL Environment Configuration
+    POSTGRES_USER: str = os.getenv("POSTGRES_USER", "recruitment_user")
+    POSTGRES_PASSWORD: str = os.getenv("POSTGRES_PASSWORD", "recruitment_pass")
+    POSTGRES_HOST: str = os.getenv("POSTGRES_HOST", "localhost")
+    POSTGRES_PORT: str = os.getenv("POSTGRES_PORT", "5432")
+    POSTGRES_DB: str = os.getenv("POSTGRES_DB", "recruitment_db")
+
+    # PostgreSQL Connection URLs
+    @property
+    def DATABASE_URL(self) -> str:
+        if "DATABASE_URL" in os.environ and os.environ["DATABASE_URL"]:
+            return os.environ["DATABASE_URL"]
+        return (
+            f"postgresql://{self.POSTGRES_USER}:{self.POSTGRES_PASSWORD}@"
+            f"{self.POSTGRES_HOST}:{self.POSTGRES_PORT}/{self.POSTGRES_DB}"
+        )
+
+    @property
+    def TEST_DATABASE_URL(self) -> str:
+        if "TEST_DATABASE_URL" in os.environ and os.environ["TEST_DATABASE_URL"]:
+            return os.environ["TEST_DATABASE_URL"]
+        return (
+            f"postgresql://{self.POSTGRES_USER}:{self.POSTGRES_PASSWORD}@"
+            f"{self.POSTGRES_HOST}:{self.POSTGRES_PORT}/recruitment_test_db"
+        )
 
     # CORS Configuration
     CORS_ORIGINS: List[str] = [
