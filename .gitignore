@@ -23,6 +23,7 @@ node_modules/
 dist/
 build/
 .cache/
+frontend-old-vite/
 
 # Runtime cache (Track 3: external data & enrichment cache - never commit)
 cache/*
