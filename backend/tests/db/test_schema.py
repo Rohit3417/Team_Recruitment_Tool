@@ -94,18 +94,19 @@ def test_models_instantiation():
 
 
 @pytest.mark.asyncio
-async def test_repository_scaffold_raises_not_implemented():
-    """Verify repository functions exist with proper signatures and raise NotImplementedError."""
+async def test_repository_contract_methods():
+    """Verify repository methods exist with proper async signatures and handle missing records."""
     dummy_uuid = uuid4()
 
-    with pytest.raises(NotImplementedError):
-        await repository.get_dataset(dummy_uuid)
+    # Querying non-existent records should return None or empty list without error
+    dataset = await repository.get_dataset(dummy_uuid)
+    assert dataset is None
 
-    with pytest.raises(NotImplementedError):
-        await repository.get_config(dummy_uuid)
+    config = await repository.get_config(dummy_uuid)
+    assert config is None
 
-    with pytest.raises(NotImplementedError):
-        await repository.get_run(dummy_uuid)
+    run = await repository.get_run(dummy_uuid)
+    assert run is None
 
-    with pytest.raises(NotImplementedError):
-        await repository.list_overrides(dummy_uuid)
+    overrides = await repository.list_overrides(dummy_uuid)
+    assert overrides == []
