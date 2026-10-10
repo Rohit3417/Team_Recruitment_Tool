@@ -203,6 +203,14 @@ export interface Criterion {
   keywords: string[];
 }
 
+/**
+ * UI-only criterion item with stable React rendering key.
+ * Not sent to the backend.
+ */
+export interface CriterionWithId extends Criterion {
+  id: string;
+}
+
 export interface EligibilityRule {
   signal: string;
   operator: string;
