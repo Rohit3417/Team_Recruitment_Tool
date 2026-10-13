@@ -30,6 +30,7 @@ import type { CriterionWithId } from "@/lib/types";
 interface CriteriaListProps {
   criteria: CriterionWithId[];
   onChange: (next: CriterionWithId[]) => void;
+  nameErrors?: Record<string, string>;
 }
 
 interface CriterionRowProps {
@@ -37,6 +38,7 @@ interface CriterionRowProps {
   index: number;
   isFirst: boolean;
   isLast: boolean;
+  nameError?: string;
   onUpdate: (index: number, next: CriterionWithId) => void;
   onRemove: (index: number) => void;
   onMove: (index: number, direction: -1 | 1) => void;
@@ -47,6 +49,7 @@ function CriterionRow({
   index,
   isFirst,
   isLast,
+  nameError,
   onUpdate,
   onRemove,
   onMove,
@@ -59,6 +62,7 @@ function CriterionRow({
   const nameErrorId = useId();
   const position = index + 1;
   const nameInvalid = nameTouched && criterion.name.trim() === "";
+  const hasError = Boolean(nameError) || nameInvalid;
 
   function handleNameChange(value: string) {
     onUpdate(index, { ...criterion, name: value });
@@ -138,15 +142,19 @@ function CriterionRow({
           onChange={(e) => handleNameChange(e.target.value)}
           onBlur={() => setNameTouched(true)}
           placeholder="e.g. technical_skills"
-          aria-invalid={nameInvalid || undefined}
-          aria-describedby={nameInvalid ? nameErrorId : undefined}
+          aria-invalid={hasError || undefined}
+          aria-describedby={hasError ? nameErrorId : undefined}
           className="max-w-xs"
         />
-        {nameInvalid && (
+        {nameError ? (
+          <p id={nameErrorId} role="alert" className="text-xs text-red-600 font-medium">
+            {nameError}
+          </p>
+        ) : nameInvalid ? (
           <p id={nameErrorId} className="text-xs text-red-600">
             Criterion name is required.
           </p>
-        )}
+        ) : null}
         <p className="text-xs text-muted-foreground">
           Use the exact signal name the backend expects (e.g. technical_skills,
           projects, github_activity, achievements, portfolio).
@@ -199,7 +207,7 @@ function CriterionRow({
   );
 }
 
-export function CriteriaList({ criteria, onChange }: CriteriaListProps) {
+export function CriteriaList({ criteria, onChange, nameErrors }: CriteriaListProps) {
   function updateCriterion(index: number, next: CriterionWithId) {
     const updated = criteria.slice();
     updated[index] = next;
@@ -239,6 +247,7 @@ export function CriteriaList({ criteria, onChange }: CriteriaListProps) {
                 index={index}
                 isFirst={index === 0}
                 isLast={index === criteria.length - 1}
+                nameError={nameErrors?.[criterion.id]}
                 onUpdate={updateCriterion}
                 onRemove={removeCriterion}
                 onMove={moveCriterion}
