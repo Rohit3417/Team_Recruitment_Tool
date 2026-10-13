@@ -234,3 +234,41 @@ export interface ScoringConfiguration {
   config_json: ScoringConfigJson;
   created_at?: string;
 }
+
+// ---------------------------------------------------------------------------
+// 12. Saved Configuration & API contract types (Day 5+)
+//     Matches docs/api-contract.md section 3.3 and backend/app/db/schemas.py.
+// ---------------------------------------------------------------------------
+
+export interface ConfigurationListItem {
+  id: string;
+  name: string;
+  is_preset: boolean;
+  created_at: string;
+}
+
+export interface ConfigurationRecord {
+  id: string;
+  name: string;
+  is_preset: boolean;
+  config_json: ScoringConfigJson;
+  created_at: string;
+}
+
+export interface ConfigurationCreate {
+  name: string;
+  is_preset?: boolean;
+  config_json: ScoringConfigJson;
+}
+
+export interface ConfigurationUpdate {
+  name?: string;
+  config_json?: ScoringConfigJson;
+}
+
+export interface ApiValidationErrorDetail {
+  loc: (string | number)[];
+  msg: string;
+  type: string;
+}
+
